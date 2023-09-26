@@ -1,0 +1,47 @@
+.mainContent{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color:coral;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    
+}
+
+.namePresentation{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+    overflow: visible;
+    position: relative;
+    padding-left: 10vw;
+}
+
+.namePresentation h2{
+    font-size: 100px;
+    height: 100px;
+    margin: 0;
+}
+
+.namePresentation h3{
+    font-size: 30px;
+}
+
+.imagePresentation{
+    width: 60vw;
+    background-image: url("https://www.blogdelfotografo.com/wp-content/uploads/2020/02/espaldas1.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
