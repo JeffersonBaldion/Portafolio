@@ -1,4 +1,5 @@
 import style from './Home.module.css'
+import About from '../About/About'
 
 export default function Home (){
     return (
@@ -13,8 +14,14 @@ export default function Home (){
                     
                 </div>
             </div>
-            <div>
-                Soy el Home
+            <div className={style.aboutMe}>
+                <div>
+                    <About/>     
+                </div>
+            </div>
+            <div className={style.project}>
+                <h2>Proyectos</h2>
+                
             </div>
         </div>
     )
