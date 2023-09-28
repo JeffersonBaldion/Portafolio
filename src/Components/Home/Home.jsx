@@ -1,5 +1,6 @@
 import style from './Home.module.css'
 import About from '../About/About'
+import Projects from '../Projects/Projects'
 
 export default function Home (){
     return (
@@ -20,7 +21,7 @@ export default function Home (){
                 </div>
             </div>
             <div className={style.project}>
-                <h2>Proyectos</h2>
+                <Projects/>
                 
             </div>
         </div>
