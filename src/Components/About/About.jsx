@@ -24,12 +24,13 @@ export default function About() {
                     <button className={style.boton}>Github</button>
                     <button className={style.boton}>LinkedIn</button>
                 </div>
-                <div className={style.idiomas}>
-                    <div>Ingles</div>
-                    <div>Espa;ol</div>
-                </div>
+                
             </div>
         </div> 
+            <div className={style.idiomas}>
+                    <div className={style.idiomaEnglish}></div>
+                    <div className={style.idiomaSpanish}></div>
+                </div>
             <div className={style.habilidades}>
                 <div className={style.botonSkill}>Trabajo en equipo</div>
                 <div className={style.botonSkill}>Competitivo</div>
