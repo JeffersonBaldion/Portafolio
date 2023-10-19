@@ -2,12 +2,20 @@ import style from "./Projects.module.css";
 import React from "react";
 import caravanaShot from '../../Assets/CaravanaShot.png'
 import apiDogShot from '../../Assets/ApiDogShot.png'
+import expressJs from '../../Assets/express.png'
+import imageJavascript from '../../Assets/javascript.png'
+import imageReact from '../../Assets/react.png'
+import imageRedux from '../../Assets/Redux.png'
+import imagePostgresql from '../../Assets/Postgresql.png'
+import imageTailwind from '../../Assets/Tailwind.png'
+import imageHtml from '../../Assets/Html.png'
+import imageCss from '../../Assets/Css.png'
 
-const reactImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'
-const expressImage = 'https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png'
-const tailwindImage = 'https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png'
-const cssImage = 'https://w7.pngwing.com/pngs/696/424/png-transparent-logo-css-css3-thumbnail.png'
-const dbImage = 'https://w7.pngwing.com/pngs/358/849/png-transparent-postgresql-database-logo-database-symbol-blue-text-logo-thumbnail.png'
+const reactImage = imageReact
+const expressImage = expressJs
+const tailwindImage = imageTailwind
+const cssImage = imageCss
+const dbImage = imagePostgresql
 
 const projects = [{
   name: 'caravana',
@@ -46,18 +54,47 @@ export default function Projects() {
   return (
     <div className={active.name=='caravana' ? style.backgroundCaravana : style.backgroundApiDogs}>
         <div className={style.projectsContainer}>
+            <h2>Mis proyectos</h2>
         <div className={style.projectTitles}>
             <button value='caravana' onClick={selectHandler}>Caravana</button>
             <button value='apidogs' onClick={selectHandler}>ApiDogs</button>
         </div>
         <div className={style.toogleProject}>
             {active.name == "caravana" ? (
-            <img src={active.image} alt="Caravana"/>
+            <div className={style.project}>
+                <img src={active.image} alt="Caravana"/>
+                <div className={style.projectTecContainer}>
+                    <div className={style.projectTec}>
+                    <img src={active.front} alt="" />
+                    <img src={active.back} alt="" />
+                    <img src={active.style} alt="" />
+                    <img src={active.database} alt="" />
+                    </div>
+                    <div className={style.link}>
+                    <a href="https//www.google.com" target="blank" > LINK </a>
+                    </div>
+                </div>
+                
+            </div>
+            
             ) : active.name == "apidogs" ? (
-            <img src={active.image} alt="ApiDogs"/>
+                <div className={style.project}>
+                <img src={active.image} alt="apidogs"/>
+                <div className={style.projectTecContainer}>
+                    <div className={style.projectTec}>
+                    <img src={active.front} alt="" />
+                    <img src={active.back} alt="" />
+                    <img src={active.style} alt="" />
+                    <img src={active.database} alt="" />
+                    </div>
+                    <div className={style.link}>
+                    <a href="google.com" target="blank" > LINK </a>
+                    </div>
+                </div>
+            </div>
             ) : null}
         </div>
-        <div className={style.tecnologia}>
+        {/* <div className={style.tecnologia}>
             <div className={style.tecnologiaDetail}>
                 <img src={active.front} alt="" />
             </div>
@@ -72,7 +109,7 @@ export default function Projects() {
             </div>
         
             <div className={style.tecnologiaDetail}>LINK</div>
-        </div>
+        </div> */}
         </div>
     </div>
   );

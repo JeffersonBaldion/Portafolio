@@ -1,19 +1,20 @@
+
 .about{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
     width: 100%;
     height: 100vh;
-    padding: 3em;
+    padding: 3vh;
     box-sizing: border-box;
+    background-color: #0f1c2e;
+    color: white;
+    
 }
 .aboutContainer{
     display: flex;
     align-items: start;
     justify-content: start;
-    color:coral;
     width: 100%;
     height: 70vh;
     padding-right: 3vw ;
@@ -25,20 +26,56 @@
 
 }
 
-.imagen{
+.tecnologies{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 60%;
     height: 100%;
+    padding-left: 3em ;
+    padding-right: 3em ;
+    box-sizing: border-box;
+}
+
+.tecnologies h2{
+    height: 20%;
+}
+
+.table {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+    table-layout: fixed;
+    
+}
+
+.table td {
+    transition: transform ease-in 0.2s;
+}
+.table ion-icon{
+    font-size: 100px;
+}
+
+.table img{
+    height: 100px;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.table td:hover{
+    transform: scale(1.1);
 }
 
 .texto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
     width: 40%;
     height: 100%;
+    margin-bottom: 3vh;
 }
 
 .textoButton{
@@ -51,7 +88,7 @@
   width:10vw;
   height:50px;
   position:relative;
-  background-color:#000;
+  background-color:#0f1c2e;
   text-transform:uppercase;
   color:white;
   font-weight:700;
@@ -83,7 +120,7 @@
 
 .idiomas{
     display: flex;
-    margin-bottom: 5vh;
+    margin-top: 2vh;
     gap:8em
 
 }
@@ -92,7 +129,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(
-        170deg ,#fff 50%,#1f1f1f 50%);
+        170deg ,#fff 50%,#0f1c2e 50%);
     border-radius: 50%;
     height: 10em;
     width: 10em;
@@ -100,17 +137,17 @@
 }
 .idiomaSpanish:hover{
     background: linear-gradient(
-        170deg ,#bd1414 50%,transparent 50%);
+        170deg ,#1F3A5F 50%,transparent 50%);
        
 }
 .idiomaSpanish::before{
-    content: "ESPA;OL";
+    content: "ESPAÑOL";
     height: 10em;
     width: 10em;
     text-align: center;
     line-height: 7em;
     border-radius: 50%;
-    background: #1f1f1f content-box;
+    background: #0f1c2e content-box;
     padding: 1em;
     box-sizing: border-box;
     top: 0;
@@ -125,7 +162,7 @@
     text-align: center;
     line-height: 11em;
     background: linear-gradient(
-        transparent 50%, #1f1f1f 50%
+        transparent 50%, #0f1c2e 50%
     );
 }
 
@@ -144,7 +181,7 @@
 
 .idiomaEnglish:hover{
     background: linear-gradient(
-        100deg ,#bd1414 50%,transparent 50%);
+        100deg ,#1F3A5F 50%,transparent 50%);
        
 }
 
@@ -155,7 +192,7 @@
     text-align: center;
     line-height: 7em;
     border-radius: 50%;
-    background: #1f1f1f content-box;
+    background: #0f1c2e content-box;
     padding: 1em;
     box-sizing: border-box;
     top: 0;
@@ -172,7 +209,7 @@
     text-align: center;
     line-height: 11em;
     background: linear-gradient(
-        transparent 50%, #1f1f1f 50%
+        transparent 50%, #0f1c2e 50%
     );
 }
 .habilidades{
@@ -184,8 +221,7 @@
     border: 1px solid white;
     border-radius: 30px;
     box-sizing: border-box;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-top: 5vh;
     overflow: hidden;
 }
 

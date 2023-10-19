@@ -13,7 +13,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(116, 116, 116, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
   }
 .backgroundApiDogs{
@@ -31,7 +31,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(116, 116, 116, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
   }
 .projectsContainer{
@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    color:coral;
+    color:white;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
@@ -71,18 +71,67 @@
     justify-content: center;
 }
 
-.toogleProject{
-    
-    width: 85%;
+.toogleProject {
+    background-color: black;
+    width: min-content;
     height: 75vh;
-    padding: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     text-align: center;
-    box-sizing: border-box;
+    position: relative;
+  }
+
+ .project{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+ } 
+
+  .project img {
+    height: 100%;
+    transition: opacity 0.3s;
+  }
+
+.project:hover img{
+    opacity: 0.5;
+}  
+  
+.projectTecContainer{
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; 
 }
 
-.toogleProject img{
-    height: 100%;
+.projectTecContainer a{
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
 }
+
+.projectTec{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectTec img{
+    height: 100px;
+    width: auto;
+}
+
+.projectTecContainer:hover{
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+}
+
 .tecnologia{
     display: flex;
     text-align: center;

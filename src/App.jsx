@@ -2,6 +2,7 @@ import style from './App.module.css'
 import {Route, Routes} from 'react-router-dom'
 import Home from './Components/Home/Home'
 import Header from './Components/Header/Header'
+import Banner from './Components/Banner/Banner'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
 
@@ -12,6 +13,9 @@ function App() {
     <div>
       <div className={style.headerContainer}>
         <Header/>
+      </div>
+      <div>
+        <Banner/>
       </div>
 
       <div className={style.contentContainer}>
