@@ -1,158 +1,115 @@
-.backgroundCaravana{
-    background-image: url('../../Assets/CaravanaShot.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
-.backgroundCaravana::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-  }
-.backgroundApiDogs{
-    background-image: url('../../Assets/ApiDogShot.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    z-index: 1;
-}
-.backgroundApiDogs::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-  }
-.projectsContainer{
+.projectContainer{
+    height: min-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: start;
-    color:white;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
+    align-items: center;
+    gap: 50px;
     position: relative;
-    z-index: 2;
 }
-
-.projectTitles{
-
+.titleContainer{
+    width: 100%;
+    height: fit-content;
+    position: relative;
     display: flex;
     justify-content: start;
-    align-items: center;
-    height: 10vh;
-    width: 85%;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-sizing: border-box;
-
 }
-.projectTitles button{
-    display:flex ;
-    width: 33%;
-    height: 100%;
-    border: 0;
-    background-color: transparent;
-    color: white;
-    text-align: center;
-    align-items: center;
+.title{
+    font-family: 'Spline Sans';
+    font-size: 2em;
+    margin: 0;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100px;
+    background-color: #F97300;
+}
+
+.project{
+    height: min-content;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 10rem;
 }
 
-.toogleProject {
-    background-color: black;
+.project h3{
+    height: min-content;
+    font-family: 'Spline Sans';
+    font-size: 1.5em;
+}
+.project p{
+    height: min-content;
+    font-family: 'Spline Sans';
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.caravana, .apiDog{
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.caravana img, .apiDog img{
+    width: auto;
+    height: 100%;
+}
+
+.caravanaBack, .apiDogBack{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.80);
+    z-index: -1;
+}
+
+.caravanaBack button, .apiDogBack button{
     width: min-content;
-    height: 75vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    text-align: center;
-    position: relative;
-  }
-
- .project{
-    text-align: center;
-    height: 100%;
-    width: 100%;
- } 
-
-  .project img {
-    height: 100%;
-    transition: opacity 0.3s;
-  }
-
-.project:hover img{
-    opacity: 0.5;
-}  
-  
-.projectTecContainer{
-  position: absolute;
-  width: 100%;
-  height: 75vh;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0; 
-}
-
-.projectTecContainer a{
+    height: min-content;
+    background-color: transparent;
+    color: #F97300;
+    border: 0;
     font-size: 50px;
-    text-decoration: none;
-    color: white;
 }
 
-.projectTec{
-    height: 50%;
-    width: 100%;
+.caravanaDetail, .apiDogDetail{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.projectTec img{
-    height: 100px;
-    width: auto;
-}
-
-.projectTecContainer:hover{
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 1;
-}
-
-.tecnologia{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
-    width: 85%;
-    height: 15vh;
-    box-sizing: border-box;
-    margin-bottom: 3vh;
-   
-}
-.tecnologiaDetail{
-    height: 100%;
-    width: 25%;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.tecnologia img {
-    height: 90%;
-    width: auto;
+.caravanaDetail div, .apiDogDetail div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caravanaDetail img, .apiDogDetail img{
+    height: 35px;
+    width: 35px;
+}
+
+.caravana:hover .caravanaBack{
+    z-index: 3;
+}
+.apiDog:hover .apiDogBack{
+    z-index: 3;
 }

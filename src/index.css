@@ -6,10 +6,7 @@
 
 
 body {
-  margin: 0;
-  display: flex;
-  align-items: start;
-  place-items: start;
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
 }

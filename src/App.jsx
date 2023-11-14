@@ -15,7 +15,7 @@ function App() {
         <Header/>
       </div>
       <div>
-        <Banner/>
+        {/* <Banner/> */}
       </div>
 
       <div className={style.contentContainer}>

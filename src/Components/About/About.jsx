@@ -1,72 +1,82 @@
 import style from "./About.module.css";
-import expressjs from '../../Assets/express.png'
-import imageJavascript from '../../Assets/javascript.png'
-import imageReact from '../../Assets/react.png'
-import imageRedux from '../../Assets/Redux.png'
-import imagePostgresql from '../../Assets/Postgresql.png'
-import imageTailwind from '../../Assets/Tailwind.png'
-import imageHtml from '../../Assets/Html.png'
-import imageCss from '../../Assets/Css.png'
-
+import footballIcon from "../../Assets/footballIcon.png";
+import gamesIcon from "../../Assets/gamesIcon.png";
+import tripIcon from '../../Assets/tripIcon.png'
+import languagesIcon from '../../Assets/languagesIcon.png'
+import cinemaIcon from '../../Assets/cinemaIcon.png'
+import musicIcon from '../../Assets/musicIcon.png'
 
 export default function About() {
   return (
-    <div className={style.about} >
-        <div className={style.aboutContainer}>
-
-            <div className={style.tecnologies}>
-               <h2>Mis Tecnologías</h2>
-                
-                <table class={style.table}>
-
-                    <tr>
-                        <td><img src={imageJavascript} alt="Javascript"></img></td>
-                        <td><img src={imageReact} alt="React"></img></td>
-                        <td><img src={imageRedux} alt="Redux"></img></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src={expressjs} alt="express-js"/></td>
-                        <td><img src="https://cdn.freebiesupply.com/logos/large/2x/sequelize-logo-black-and-white.png" alt="Sequelize"></img></td>
-                        <td><img src={imagePostgresql} alt="PostgreSQL"></img></td>
-                    </tr>
-
-                    <tr>
-                        <td><img src={imageTailwind} alt="Tailwind"></img></td>
-                        <td><img src={imageHtml} alt="HTML"></img></td>
-                        <td><img src={imageCss} alt="CSS"></img></td>
-                    </tr>
-
-                </table>
+    <div className={style.aboutContainer}>
+      <span className={style.blur}></span>
+      <div className={style.about}>
+        <div className={style.titleContainer}>
+          <h1 className={style.title}>About me</h1>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div className={style.info}>
+        <div className={style.skills}>
+          <h2>Skills</h2>
+          <div>
+            <ul>
+              <li className={style.javascript}>Javascript</li>
+              <li className={style.react}>React</li>
+              <li className={style.redux}>Redux</li>
+              <li className={style.css}>Css</li>
+              <li className={style.html}>HTML</li>
+              <li className={style.tailwind}>Tailwind</li>
+              <li className={style.express}>Express</li>
+              <li className={style.sequelize}>Sequelize</li>
+              <li className={style.postgresql}>PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+        <div className={style.hobbiesContainer}>
+          <div className={style.hobbiesTitle}>
+            <h3>Hobbies</h3>
+          </div>
+          <div className={style.hobbies}>
+            <div className={style.hobbiesOne}>
+              <div>
+                <span>Games</span>
+                <img src={gamesIcon} alt="gamesIcon" />
+              </div>
+              <div>
+                <span>Travel</span>
+                <img src={tripIcon} alt="tripIcon" />
+              </div>
+              <div>
+                <span>Languages</span>
+                <img src={languagesIcon} alt="languagesIcon" />
+              </div>
             </div>
-            <div className={style.texto}>
-                <div>
-                    <h2>Sobre mi</h2>
-                </div>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-                        voluptatem ea architecto iste magnam delectus totam eos cupiditate
-                        in ullam fugiat culpa nam, minima, distinctio praesentium,
-                        voluptatum quos numquam est.
-                    </p>
-                </div>
-                <div className={style.idiomas}>
-                    <div className={style.idiomaEnglish}></div>
-                    <div className={style.idiomaSpanish}></div>
+            <div className={style.hobbiesOne}>
+              <div>
+                <span>Cinema</span>
+                <img src={cinemaIcon} alt="cinemaIcon" />
+              </div>
+              <div>
+                <span>Music</span>
+                <img src={musicIcon} alt="musicIcon" />
+              </div>
+              <div>
+                <span>Football</span>
+                <img src={footballIcon} alt="footballIcon" />
+              </div>
             </div>
-                
-            </div>
-        </div> 
-            
-            <div className={style.habilidades}>
-                <div className={style.botonSkill}>Trabajo en equipo</div>
-                <div className={style.botonSkill}>Competitivo</div>
-                <div className={style.botonSkill}>Adaptable</div>
-                <div className={style.botonSkill}>Responsable</div>
-                <div className={style.botonSkill}>Puntual</div>
-            </div>
-           
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

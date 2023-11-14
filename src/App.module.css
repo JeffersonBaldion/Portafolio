@@ -1,11 +1,19 @@
-/* .headerContainer {
+.headerContainer {
   width: 100vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
 } 
+.contentContainer{
 
- .contentContainer{
-  width: 100vw;
-}  */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    box-sizing: border-box;
+  
+}
 
 
 
