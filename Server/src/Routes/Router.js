@@ -1,18 +1,23 @@
 const {Router} = require ('express')
 const nodemailer = require('nodemailer')
 
-const trasporter = nodemailer.createTransport({
-    host:"smtp.zoho.com",
-    port: 465,
-    secure: true,
-    auth:{
-        user:"jefferson.baldion.b@zohomail.com",
-        pass:"xamPtXKLTpUB",
-    }
-})
+
 const router = Router()
 
+router.get('/', (req, res)=>{
+    res.status(200).send("Portafolio Server")
+})
+
 router.post("/mail", async(req, res)=>{
+    const trasporter = nodemailer.createTransport({
+        host:"smtp.zoho.com",
+        port: 465,
+        secure: true,
+        auth:{
+            user:"jefferson.baldion.b@zohomail.com",
+            pass:"xamPtXKLTpUB",
+        }
+    })
     const {name, phone, mail, message} = req.body
     try {
         const info = await trasporter.sendMail({
