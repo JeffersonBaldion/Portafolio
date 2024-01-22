@@ -28,7 +28,7 @@ export default function ContactMe() {
     const { name } = e.target;
     if (name == "send") {
       try {
-        await axios.post("localhost:3001/mail", contactForm)
+        await axios.post("https://portafolio-blue-six.vercel.app/mail", contactForm)
         setShowAlert(true);
         setTimeout(()=>{
           setShowAlert(false);
