@@ -6,7 +6,7 @@ const routes = require("./Routes/Router");
 const server = express();
 
 const corsOptions = {
-  origin: "*",
+  Origin: "*",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTION",
   allowedHeaders: "Content-Type,Authorization",
 };
