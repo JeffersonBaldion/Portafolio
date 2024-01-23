@@ -7,7 +7,7 @@ const server = express();
 
 const corsOptions = {
   origin: "*",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTION",
   allowedHeaders: "Content-Type,Authorization",
 };
 
