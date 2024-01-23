@@ -5,7 +5,12 @@ const nodemailer = require('nodemailer')
 const router = Router()
 
 router.get('/', (req, res)=>{
-    res.status(200).send("Portafolio Server")
+    try {
+        res.status(200).send("Portafolio Server")
+    } catch (error) {
+        res.status(400).send(error)
+    }
+    
 })
 
 router.post("/mail", async(req, res)=>{
@@ -33,5 +38,7 @@ router.post("/mail", async(req, res)=>{
 
     }
 })
+
+
 
 module.exports = router;
