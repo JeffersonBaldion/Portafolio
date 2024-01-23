@@ -11,6 +11,7 @@ const corsOptions = {
   allowedHeaders: "Content-Type,Authorization",
 };
 
+server.use(express.urlencoded({ extended: true }))
 server.use(cors(corsOptions));
 server.use(express.json());
 server.use(morgan("dev"));
