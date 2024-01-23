@@ -5,14 +5,10 @@ const routes = require("./Routes/Router");
 
 const server = express();
 
-const corsOptions = {
-  origin: "*",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-  allowedHeaders: "Content-Type,Authorization",
-};
+
 
 server.use(express.urlencoded({ extended: true }))
-server.use(cors(corsOptions));
+server.use(cors({origin:"*"}));
 server.use(express.json());
 server.use(morgan("dev"));
 server.use("/", routes);
