@@ -130,6 +130,9 @@
 
 
 @media (max-width: 1000px) {
+    .imagePresentation img{
+        margin-bottom: 3rem;
+    }
     .aboutMe{
         width: 100%;
         padding-left: 2rem;

@@ -91,6 +91,19 @@ p{
 .dropDownContainer{
     display: none; 
 }
+
+.dropDownLogo img{
+    height: 45px;
+    width: 45px;
+    transition: all ease-in-out 3ms;
+    cursor: pointer;
+}
+
+.dropDownLogo img:active{
+    height: 48px;
+    width: 48px;
+}
+
 .dropDown{
     display: none;
 }
@@ -152,22 +165,58 @@ p{
         width: 100%; 
         display: flex;   
         justify-content: end;
-        position: relative;
     }
     .dropDown{
-        top: 30px;
-        width: min-content;
-        height: min-content;
+        box-shadow: 9px 0px 50px 1px #F97300;
+        z-index: 1;
+        background-color: #171717;
+        top: 0;
+        right: 0;
+        width: 30vw;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
-        gap: 0.5rem;
-        position: absolute;
+        align-items: center;
+        gap: 1rem;
+        position: fixed;
         padding: 1rem;
-        border: solid 1px white; 
         border-radius: 10px;
   }
+
+  .dropDownExit{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+  }
+
+  .dropDownExit::before{
+    content: "";
+    top: 5px;
+    left: -16px;
+    height: 30px;
+    width: 25px;
+    position: absolute;
+    background-color: #F97300;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .dropDownExit img{
+    height: 20px;
+    width: 20px;
+  }
+  .dropDownExit button{
+    border: 0;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0;
+    background-color: transparent;
+    color: #F97300;
+    cursor: pointer;
+  }
+
   .dropDown a, button{
     text-decoration: none;
     font-family: 'Spline Sans';
@@ -176,13 +225,17 @@ p{
     font-weight: 300;
   }
 
-  .dropDown button{
+  .download{
     border: 0;
-    padding: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
     margin: 0;
     background-color: transparent;
-    color: #F97300;
+    color: black;
     cursor: pointer;
+    background-color: #F97300;
+    text-align: center;
   }
   .link{
     position: relative;

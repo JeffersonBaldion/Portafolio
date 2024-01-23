@@ -6,51 +6,62 @@ import LinkedInImage from "../../Assets/linkedIn.png";
 import phoneImage from "../../Assets/phone.png";
 import React from "react";
 import axios from "axios";
-import Swal from "sweetalert2";
+import validate from "./validation";
+
 
 export default function ContactMe() {
+  const [errors, setErrors] = React.useState({})
   const [contactForm, setContactForm] = React.useState({
     name: "",
     phone: "",
     mail: "",
     message: "",
   });
-
   const [showAlert, setShowAlert] = React.useState(false);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setContactForm({ ...contactForm, [name]: value });
   };
 
+  React.useEffect(()=>{
+    setErrors(validate(contactForm))
+  },[contactForm])
+
   const handleClick = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const { name } = e.target;
     if (name == "send") {
-      try {
-        await axios.post("https://portafolio-blue-six.vercel.app/mail", contactForm).then(function (response){
-          setShowAlert(true);
-        setTimeout(()=>{
-          setShowAlert(false);
-        }, 3000)
-        setContactForm({
-          name: "",
-          phone: "",
-          mail: "",
-          message: "",
-        });
-      }).catch(function(error){
-        window.alert(error)
-      })
-        
+      setErrors(validate(contactForm))
+      if(Object.keys(errors).length === 0){
+          try {
+        await axios
+          .post("https://portafolio-blue-six.vercel.app/mail", contactForm)
+          .then(function (response) {
+            setShowAlert(true);
+            setTimeout(() => {
+              setShowAlert(false);
+            }, 3000);
+          })
+          .catch(function (error) {
+            window.alert(error);
+          });
       } catch (error) {
-        window.alert(error)
+        window.alert(error);
       }
+      }else{
+        return
+      }
+    } else {
+      setContactForm({
+        name: "",
+        phone: "",
+        mail: "",
+        message: "",
+      });
     }
-    
   };
 
-  console.log(showAlert);
+  console.log(errors)
 
   return (
     <div className={style.mainContainer}>
@@ -109,6 +120,7 @@ export default function ContactMe() {
                   type="text"
                   placeholder="Jefferson Baldion"
                 />
+                {errors.errorName?<p>{errors.errorName}</p>:null}
               </div>
               <div className={style.formInput}>
                 <label>Telefono</label>
@@ -116,9 +128,10 @@ export default function ContactMe() {
                   onChange={handleChange}
                   name="phone"
                   value={contactForm.phone}
-                  type="text"
-                  placeholder="+57 (322) 477 6601"
+                  type="number"
+                  placeholder="+573224776601"
                 />
+                {errors.errorPhone?<p>{errors.errorPhone}</p>:null}
               </div>
             </div>
             <div className={style.formDos}>
@@ -131,6 +144,7 @@ export default function ContactMe() {
                   type="text"
                   placeholder="Jefferson.Baldion.b@gmail.com"
                 />
+                {errors.errorMail?<p>{errors.errorMail}</p>:null}
               </div>
             </div>
             <div className={style.formTres}>
@@ -142,15 +156,20 @@ export default function ContactMe() {
                   value={contactForm.message}
                   placeholder="Hola Jefferson"
                 />
+              {errors.errorMessage?<p>{errors.errorMessage}</p>:null}
               </div>
             </div>
             <div className={style.formButton}>
               <button onClick={handleClick} name="send">
                 Enviar
               </button>
-              <button>Limpiar</button>
+              <button onClick={handleClick} name="clear">Limpiar</button>
             </div>
-            {showAlert?<div className={style.alerta}><p>Enviado satisfactoriamente</p></div>:null}
+            {showAlert ? (
+              <div className={style.alerta}>
+                <p>Enviado satisfactoriamente</p>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

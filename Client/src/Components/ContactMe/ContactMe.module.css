@@ -203,6 +203,11 @@
     color: white;
 }
 
+.formInput p{
+    font-size: 0.7em;
+    color: #F97300;
+}
+
 .formInput input{
     background-color: #171717;
     border: 0;
@@ -213,6 +218,7 @@
     font-weight: lighter;
     color: white;
     transition: border linear 0.2s;
+    
 }
 .formInput input:focus{
     outline: none;
