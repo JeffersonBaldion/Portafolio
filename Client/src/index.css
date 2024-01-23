@@ -6,8 +6,8 @@
 
 
 body {
-  overflow-x: hidden;
-  min-width: 320px;
+  margin: 0;
+  min-width: 420px;
   min-height: 100vh;
 }
 

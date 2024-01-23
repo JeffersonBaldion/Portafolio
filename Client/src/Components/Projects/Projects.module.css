@@ -1,6 +1,8 @@
 .projectContainer{
     height: min-content;
     width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -10,6 +12,7 @@
     margin-top: 8rem;
 }
 .titleContainer{
+
     width: 100%;
     height: fit-content;
     position: relative;
@@ -17,6 +20,7 @@
     justify-content: start;
 }
 .title{
+    padding-left: 2rem;
     font-family: 'Spline Sans';
     font-size: 2em;
     margin: 0;
@@ -26,7 +30,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 2rem;
     height: 5px;
     width: 100px;
     background-color: #F97300;
@@ -195,9 +199,22 @@
 
 @media (max-width: 1000px){
     .projectStyle{
+        max-width: 100vw;
         height: min-content;
         display: flex;
         flex-direction: column;
+    }
+    .imageProject {
+        width: 100%;
+        min-width: 200px;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .imageProject img {
+        width: 300px;
+        height: auto;
+        padding: 0;
     }
 
     .projectStyle::before{

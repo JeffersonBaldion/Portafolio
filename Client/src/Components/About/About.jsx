@@ -5,6 +5,12 @@ import tripIcon from "../../Assets/tripIcon.png";
 import languagesIcon from "../../Assets/languagesIcon.png";
 import cinemaIcon from "../../Assets/cinemaIcon.png";
 import musicIcon from "../../Assets/musicIcon.png";
+import expressImage from "../../Assets/express.png";
+import imageJavascript from "../../Assets/javascript.png";
+import reactImage from "../../Assets/react.png";
+import imagePostgresql from "../../Assets/Postgresql.png";
+import tailwindImage from "../../Assets/Tailwind.png";
+import mongoDbImage from "../../Assets/mongoDb.png";
 
 export default function About() {
   return (
@@ -32,19 +38,35 @@ export default function About() {
           <div className={style.skillsTitle}>
           <h3>Habilidades</h3>
           </div>
-
-          <div className={style.skills}>
-            <ul>
-              <li className={style.javascript}>Javascript</li>
-              <li className={style.react}>React</li>
-              <li className={style.redux}>Redux</li>
-              <li className={style.css}>Css</li>
-              <li className={style.html}>HTML</li>
-              <li className={style.tailwind}>Tailwind</li>
-              <li className={style.express}>Express</li>
-              <li className={style.sequelize}>Sequelize</li>
-              <li className={style.postgresql}>PostgreSQL</li>
-            </ul>
+          <div className={style.hobbies}>
+            <div className={style.hobbiesOne}>
+              <div>
+                <span>Javascript</span>
+                <img src={imageJavascript} alt="gamesIcon" />
+              </div>
+              <div>
+                <span>Express Js</span>
+                <img src={expressImage} alt="tripIcon" />
+              </div>
+              <div>
+                <span>React Js</span>
+                <img src={reactImage} alt="languagesIcon" />
+              </div>
+            </div>
+            <div className={style.hobbiesOne}>
+              <div>
+                <span>Tailwind</span>
+                <img src={tailwindImage} alt="cinemaIcon" />
+              </div>
+              <div>
+                <span>PostgreSQL</span>
+                <img src={imagePostgresql} alt="musicIcon" />
+              </div>
+              <div>
+                <span>MongoDb</span>
+                <img src={mongoDbImage} alt="footballIcon" />
+              </div>
+            </div>
           </div>
         </div>
         <div className={style.hobbiesContainer}>

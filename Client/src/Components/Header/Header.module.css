@@ -172,8 +172,8 @@ p{
         background-color: #171717;
         top: 0;
         right: 0;
-        width: 30vw;
-        height: 40vh;
+        width: 40vw;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;

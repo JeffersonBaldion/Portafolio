@@ -7,11 +7,12 @@
 .contentContainer{
 
     width: 100vw;
+    box-sizing: content-box;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 10rem;
-    box-sizing: border-box;
+
   
 }
 

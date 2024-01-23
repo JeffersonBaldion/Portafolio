@@ -2,6 +2,7 @@ import style from "./Projects.module.css";
 import React from "react";
 import caravanaShot from "../../Assets/CaravanaShot.png";
 import apiDogShot from "../../Assets/ApiDogShot.png";
+import readlygoodsShot from "../../Assets/readlygoodsShot.png";
 import expressImage from "../../Assets/express.png";
 import imageJavascript from "../../Assets/javascript.png";
 import reactImage from "../../Assets/react.png";
@@ -10,7 +11,6 @@ import imagePostgresql from "../../Assets/Postgresql.png";
 import tailwindImage from "../../Assets/Tailwind.png";
 import imageHtml from "../../Assets/Html.png";
 import cssImage from "../../Assets/Css.png";
-import readlygoodsShot from "../../Assets/readlygoodsShot.png";
 import mongoDbImage from "../../Assets/mongoDb.png";
 
 const projects = [
