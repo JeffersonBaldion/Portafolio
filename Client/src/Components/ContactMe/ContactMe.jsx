@@ -28,8 +28,8 @@ export default function ContactMe() {
     const { name } = e.target;
     if (name == "send") {
       try {
-        await axios.post("https://portafolio-blue-six.vercel.app/mail", contactForm)
-        setShowAlert(true);
+        await axios.post("https://portafolio-blue-six.vercel.app/mail", contactForm).then(function (response){
+          setShowAlert(true);
         setTimeout(()=>{
           setShowAlert(false);
         }, 3000)
@@ -39,6 +39,10 @@ export default function ContactMe() {
           mail: "",
           message: "",
         });
+      }).catch(function(error){
+        window.alert(error)
+      })
+        
       } catch (error) {
         window.alert(error)
       }
