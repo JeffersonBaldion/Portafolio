@@ -3,6 +3,7 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import ContactMe from "../ContactMe/ContactMe";
 import profilePhoto from "../../Assets/user.png";
+import photo from "../../Assets/Profile-removebg.png";
 import Footer from "../Footer/Footer";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         <div className={style.imagePresentation}>
-          <img src={profilePhoto} alt="" />
+          <img src={photo} alt="" />
         </div>
       </div>
       <div className={style.aboutMe}>
