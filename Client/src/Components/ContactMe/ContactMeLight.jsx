@@ -1,4 +1,4 @@
-import "./ContactMeLight.module.css";
+import style from "./ContactMeLight.module.css";
 import phoneIcon from "../../Assets/phoneIcon.svg";
 import mailIcon from "../../Assets/mailIcon.svg";
 import locationIcon from "../../Assets/locationIcon.svg";
@@ -62,36 +62,36 @@ export default function ContactMeLight() {
   };
 
   return (
-    <div className="contactMeContainer">
-      <div className="infoContainer">
-        <div className="infoTitle">
+    <div className={style.contactMeContainer}>
+      <div className={style.infoContainer}>
+        <div className={style.infoTitle}>
           <h2>Deja tu mensaje</h2>
           <h3>
             Enviame tus comentarios y sugerencias a través del siguiente
             formulario
           </h3>
         </div>
-        <div className="contactIcon">
-          <div className="eachContact">
+        <div className={style.contactIcon}>
+          <div className={style.eachContact}>
             <img src={phoneIcon} alt="" />
             <label htmlFor="">+57 (322) 4776601</label>
           </div>
-          <div className="eachContact">
+          <div className={style.eachContact}>
             <img src={mailIcon} alt="" />
             <label htmlFor="">Jefferson.baldion.b@gmail.com</label>
           </div>
-          <div className="eachContact">
+          <div className={style.eachContact}>
             <img src={locationIcon} alt="" />
             <label htmlFor="">Bogota/Colombia</label>
           </div>
         </div>
-        <div className="redes">
+        <div className={style.redes}>
           <img src={instagramIcon} alt="" />
           <img src={facebookIcon} alt="" />
           <img src={linkedInIcon} alt="" />
         </div>
       </div>
-      <div className="formularioContainer">
+      <div className={style.formularioContainer}>
         <div>
           <input
             onChange={handleChange}
@@ -131,9 +131,9 @@ export default function ContactMeLight() {
             value={contactForm.message}
           />
           {errors.errorMessage ? <p>{errors.errorMessage}</p> : null}
-          <div className="btnContainer">
+          <div className={style.btnContainer}>
           {showAlert ? (
-              <div className="alerta">
+              <div className={style.alerta}>
                 <h2>Enviado satisfactoriamente</h2>
               </div>
             ) : null}
