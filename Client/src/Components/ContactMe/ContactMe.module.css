@@ -302,10 +302,16 @@
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .infoForm, .formContainer{
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+    .infoData{
+        gap: 1rem;
+    }
+    .formUno{
+        flex-direction: column;
     }
 
     .mainContainer{

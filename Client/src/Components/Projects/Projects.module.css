@@ -148,51 +148,34 @@
 }
 
 .projectButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.projectButton a{
+.projectButton div{
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: max-content;
-    height: 30px;
-    color: #171717;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    border: 0;
-    border-radius: 10px;
-    font-family: 'Spline Sans' ;
-    font-size: 20px;
-    background-color: #f97400dc;
-    cursor: pointer;
+}
+
+.hrefButton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.projectButton a{
+    
+    width: fit-content;
+    color: white;
     text-decoration: none;
 }
 
-.projectButton a:hover{
-    background-color: #F97300;
-}
-
-.projectButton p{
-    font-size: 2rem;
-    height: 100%;
-}
-
-.projectStyleDetail div{
-    display: flex;
-    justify-content: space-between;
-}
 
 .projectStyleDetail img{
-    height: 35px;
-    width: 35px;
+    height: 24px;
+    width: 24px;
     max-width: 35px;
     padding-left: 0;
     padding-right: 20px;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Spline+Sans:wght@300;500;700&display=swap');
+
 .headerContainer {
   width: 100vw;
   display: flex;
@@ -11,8 +13,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10rem;
-
   
 }
 

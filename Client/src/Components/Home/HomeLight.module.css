@@ -1,0 +1,65 @@
+.homeContainer{
+    background-image: url('../../Assets/backG2.png');
+    background-size: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.presentacion{
+    height: min-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 1rem;
+    margin-top: 12rem;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.presentacion h1{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.presentacion h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.presentacion h3{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.presentacion button{
+    height: 40px;
+    width: 150px;
+    margin-top: 2rem;
+    border: 0;
+    background-color: #F97300 ;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1000px){
+    .presentacion{
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .presentacion{
+        padding-top: 0;
+    }
+}

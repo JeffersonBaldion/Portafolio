@@ -58,7 +58,7 @@ p{
 
 .menu a{
     font-weight: 300;
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -197,22 +197,22 @@ p{
     }
     .dropDown{
       box-shadow:  0px 5px 15px #F97300;
-      color: black;
-      z-index: 1;
-      background-color: #171717;
-      padding-bottom: 25px;
-      top: -15px;
-      left: -25px;
-      width: 100px;
-      height: min-content;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 25px;
-      position: absolute;
-      border-radius: 30px;
-      padding-top: 15px;
+        color: black;
+        z-index: 1;
+        background-color: white;
+        padding-bottom: 25px;
+        top: -15px;
+        left: -25px;
+        width: 100px;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        position: absolute;
+        border-radius: 30px;
+        padding-top: 15px;
   }
 
   .dropDownExit{
@@ -274,13 +274,13 @@ p{
   .download ion-icon{
     height: 30px;
     width: 30px;
-    color: white;
+    color: black;
   }
 
   .link ion-icon{
     height: 30px;
     width: 30px;
-    color: white;
+    color: black;
   }
   .link::before{
     content: '';
@@ -307,3 +307,4 @@ p{
         display: none;
     }
 }
+

@@ -1,0 +1,171 @@
+.projectsContainer{
+    margin: 100px;
+    color: black;
+    position: relative;
+}
+
+.projectsContainer::after{
+    content: "";
+    height: 5px;
+    width: 30px;
+    position: absolute;
+    background-color: #F97300;
+    z-index: 1;
+    top: 0;
+}
+
+.projectsContainer h2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.eachProjectContainer{
+    border-left: solid 5px #F97300 ;
+}
+
+.eachProject{
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 300px;
+    width: 100%;
+    padding-left: 50px;
+    box-sizing: border-box;
+    
+}
+
+.eachProject::after{
+    content: "";
+    height: 5px;
+    width: 30px;
+    background-color: #F97300;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.infoProject{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.infoProject h2{
+    font-size: 2rem;
+    padding: 0;
+
+}
+
+.infoProject h3{
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.infoProject h4{
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.infoProject div{
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.projectButton {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectButton div{
+    width: 50%;
+}
+
+.hrefButton{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.projectButton a{
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: fit-content;
+    font-weight: 700;
+    
+}
+
+
+.projectStyleDetail div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageProject{
+    height: 250px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.imageProject img{
+    height: 250px;
+}
+
+@media (max-width: 1000px){
+
+    .eachProjectContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .eachProject{
+        padding: 0;
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imageProject{
+        width: 100%;
+        height: auto;
+    }
+
+    .imageProject img{
+        width: 100%;
+        height: auto;
+    }
+    .infoProject{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .projectsContainer{
+        max-width: 100vw;
+        margin: 0;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .eachProject{
+        padding: 0;
+    }
+    .imageProject{
+        width: 100%;
+    }
+
+    .infoProject{
+        width: 100%;
+        padding-left: 25px;
+        box-sizing: border-box;
+    }
+}

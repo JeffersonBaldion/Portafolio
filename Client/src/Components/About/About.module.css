@@ -55,7 +55,7 @@
     right: 0;
     bottom: 0;
     box-shadow: 0 0 500px 40px #F97300;
-    z-index: -100;
+    z-index: 0;
 }
 
 .info{

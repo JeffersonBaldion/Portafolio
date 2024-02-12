@@ -12,6 +12,9 @@ import tailwindImage from "../../Assets/Tailwind.png";
 import imageHtml from "../../Assets/Html.png";
 import cssImage from "../../Assets/Css.png";
 import mongoDbImage from "../../Assets/mongoDb.png";
+import templateUnoPicture from "../../Assets/templateUno.png";
+import templateDosPicture from "../../Assets/templateDos.png";
+import templateTresPicture from "../../Assets/templateTres.png";
 
 const projects = [
   {
@@ -49,6 +52,7 @@ const projects = [
 export default function Projects() {
   return (
     <div className={style.projectContainer}>
+      {/* Seccion de proyectos */}
       <div className={style.titleContainer}>
         <h2 className={style.title}>Proyectos</h2>
       </div>
@@ -57,7 +61,7 @@ export default function Projects() {
           <div className={style.projectStyle}>
             <img
               className={style.imageProject}
-              src={projects[0].image}
+              src={caravanaShot}
               alt="caravanaShot"
             />
             <div className={style.projectStyleBack}>
@@ -72,18 +76,17 @@ export default function Projects() {
                   demostrando mi enfoque eficiente y funcional.
                 </p>
                 <div className={style.projectButton}>
-                  <a href={projects[0].url} target="_blank">
-                    {"Enlace "}
-                    <p>
-                      <ion-icon name="link"></ion-icon>
-                    </p>
+                  <div>
+                    <img src={reactImage} alt="" />
+                    <img src={expressImage} alt="" />
+                    <img src={tailwindImage} alt="" />
+                    <img src={imagePostgresql} alt="" />
+                  </div>
+                  <div className={style.hrefButton}>
+                  <a href="https://caravana.onrender.com" target="_blank">
+                    {"Ver más"}
                   </a>
-                </div>
-                <div className={style.imgProject}>
-                  <img src={projects[0].front} alt="react" />
-                  <img src={projects[0].back} alt="react" />
-                  <img src={projects[0].style} alt="react" />
-                  <img src={projects[0].database} alt="react" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,18 +109,17 @@ export default function Projects() {
                   interfaz hasta el manejo de datos eficiente.
                 </p>
                 <div className={style.projectButton}>
-                  <a href={projects[1].gitUrl} target="_blank">
-                    {"Github "}
-                    <p>
-                      <ion-icon name="logo-github"></ion-icon>
-                    </p>
+                  <div>
+                    <img src={reactImage} alt="" />
+                    <img src={expressImage} alt="" />
+                    <img src={cssImage} alt="" />
+                    <img src={imagePostgresql} alt="" />
+                  </div>
+                  <div className={style.hrefButton}>
+                  <a href="https://github.com/JeffersonBaldion/Api-Dog" target="_blank">
+                    {"Ver más"}
                   </a>
-                </div>
-                <div>
-                  <img src={projects[1].front} alt="react" />
-                  <img src={projects[1].back} alt="react" />
-                  <img src={projects[1].style} alt="react" />
-                  <img src={projects[1].database} alt="react" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,7 +127,7 @@ export default function Projects() {
           <div className={style.projectStyle}>
             <img
               className={style.imageProject}
-              src={projects[2].image}
+              src={readlygoodsShot}
               alt="readlyGoods"
             />
             <div className={style.projectStyleBack}>
@@ -140,19 +142,109 @@ export default function Projects() {
                   una navegación intuitiva y atractiva en este proyecto de
                   e-commerce especializado en libros digitales.
                 </p>
+      
+                  <div className={style.projectButton}>
+                    <div>
+                      <img src={reactImage} alt="" />
+                      <img src={expressImage} alt="" />
+                      <img src={tailwindImage} alt="" />
+                      <img src={mongoDbImage} alt="" />
+                    </div>
+                    <div className={style.hrefButton}>
+                    <a href="https://c15-58-readlygoods.vercel.app/" target="_blank">
+                      {"Ver más"}
+                    </a>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Seccion de Templates */}
+      <div className={style.titleContainer}>
+        <h2 className={style.title}>Templates</h2>
+      </div>
+      <div className={style.project}>
+        <div className={style.eachProject}>
+          <div className={style.projectStyle}>
+            <img
+              className={style.imageProject}
+              src={templateUnoPicture}
+              alt="caravanaShot"
+            />
+            <div className={style.projectStyleBack}>
+              <div className={style.projectStyleDetail}>
+                <h3>Template 1</h3>
+                <p>
+                  Template creado para una empresa tecnologica proveedora de
+                  software para startups.
+                </p>
                 <div className={style.projectButton}>
-                  <a href={projects[2].url} target="_blank">
-                    {"Enlace "}
-                    <p>
-                      <ion-icon name="link"></ion-icon>
-                    </p>
+                  <div>
+                    <img src={reactImage} alt="" />
+                    <img src={cssImage} alt="" />
+                  </div>
+                  <div className={style.hrefButton}>
+                  <a href="#" target="_self">
+                    {"Próximamente"}
                   </a>
+                  </div>
                 </div>
-                <div>
-                  <img src={projects[2].front} alt="React" />
-                  <img src={projects[2].back} alt="Express" />
-                  <img src={projects[2].style} alt="Tailwind" />
-                  <img src={projects[2].database} alt="MongoDB" />
+              </div>
+            </div>
+          </div>
+          <div className={style.projectStyle}>
+            <img
+              className={style.imageProject}
+              src={templateDosPicture}
+              alt="apiDogShot"
+            />
+            <div className={style.projectStyleBack}>
+              <div className={style.projectStyleDetail}>
+                <h3>Template 2</h3>
+                <p>
+                  Template creado para un Pub y distribuidor de licores con
+                  servicio tanto en tienda como en linea.
+                </p>
+                <div className={style.projectButton}>
+                  <div>
+                    <img src={reactImage} alt="" />
+                    <img src={cssImage} alt="" />
+                  </div>
+                  <div className={style.hrefButton}>
+                  <a href="#" target="_self">
+                    {"Próximamente"}
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={style.projectStyle}>
+            <img
+              className={style.imageProject}
+              src={templateTresPicture}
+              alt="readlyGoods"
+            />
+            <div className={style.projectStyleBack}>
+              <div className={style.projectStyleDetail}>
+                <h3>Template 3</h3>
+                <p>
+                  Template creado para una empresa de metalmecanica con venta en
+                  linea de productos para almacenaje industrial.
+                </p>
+                <div className={style.projectButton}>
+                  <div>
+                    <img src={reactImage} alt="" />
+                    <img src={cssImage} alt="" />
+                  </div>
+                  <div className={style.hrefButton}>
+                  <a href="#" target="_self">
+                    {"Próximamente"}
+                  </a>
+                  </div>
                 </div>
               </div>
             </div>
