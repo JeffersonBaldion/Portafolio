@@ -6,7 +6,7 @@ import expressIcon from '../../Assets/express.png'
 import reactIcon from '../../Assets/react.png'
 import tailwindIcon from '../../Assets/Tailwind.png'
 import postgreSQLIcon from '../../Assets/Postgresql.png'
-// import mongoDBIcon from '../../Assets/mongoDB.png'
+import mongoDBIcon from "../../Assets/mongoDb.png"
 import viajeIcon from "../../Assets/viajesIcon.png";
 import juegoIcon from '../../Assets/juegosIcon.png'
 import lenguasIcon from '../../Assets/lenguasIcon.svg'
@@ -87,7 +87,7 @@ export default function AboutLight() {
             </div>
             <div>
               <div className={style.icon}>
-                <img src={postgreSQLIcon} alt="" />
+                <img src={mongoDBIcon} alt="" />
               </div>
               <label>MongoDB</label>
             </div>
