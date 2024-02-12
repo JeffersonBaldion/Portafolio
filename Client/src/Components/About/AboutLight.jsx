@@ -87,7 +87,7 @@ export default function AboutLight() {
             </div>
             <div>
               <div className={style.icon}>
-                <img src={mongoDBIcon} alt="" />
+                <img src={postgreSQLIcon} alt="" />
               </div>
               <label>MongoDB</label>
             </div>
