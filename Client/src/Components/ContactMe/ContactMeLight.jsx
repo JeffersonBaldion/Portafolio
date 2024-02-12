@@ -1,4 +1,4 @@
-import "./ContactMelight.module.css";
+import "./ContactMeLight.module.css";
 import phoneIcon from "../../Assets/phoneIcon.svg";
 import mailIcon from "../../Assets/mailIcon.svg";
 import locationIcon from "../../Assets/locationIcon.svg";
