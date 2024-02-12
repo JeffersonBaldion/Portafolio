@@ -6,7 +6,7 @@ import expressIcon from '../../Assets/express.png'
 import reactIcon from '../../Assets/react.png'
 import tailwindIcon from '../../Assets/Tailwind.png'
 import postgreSQLIcon from '../../Assets/Postgresql.png'
-import mongoDBIcon from '../../Assets/mongoDB.png'
+// import mongoDBIcon from '../../Assets/mongoDB.png'
 import viajeIcon from "../../Assets/viajesIcon.png";
 import juegoIcon from '../../Assets/juegosIcon.png'
 import lenguasIcon from '../../Assets/lenguasIcon.svg'
