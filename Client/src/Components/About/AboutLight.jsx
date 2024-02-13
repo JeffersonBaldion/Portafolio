@@ -19,7 +19,7 @@ import futbolIcon from '../../Assets/futbolIcon.svg'
 export default function AboutLight() {
   return (
     <div>
-      <div className={style.aboutContainer}>
+      <div className={style.aboutContainer} id="aboutMe">
         <div className={style.seccionUno}>
           <div className={style.infoAbout}>
             <h2>Sobre mi</h2>

@@ -62,7 +62,7 @@ export default function ContactMeLight() {
   };
 
   return (
-    <div className={style.contactMeContainer}>
+    <div className={style.contactMeContainer} id="contactame">
       <div className={style.infoContainer}>
         <div className={style.infoTitle}>
           <h2>Deja tu mensaje</h2>
@@ -86,9 +86,9 @@ export default function ContactMeLight() {
           </div>
         </div>
         <div className={style.redes}>
-          <img src={instagramIcon} alt="" />
+          {/* <img src={instagramIcon} alt="" />
           <img src={facebookIcon} alt="" />
-          <img src={linkedInIcon} alt="" />
+          <img src={linkedInIcon} alt="" /> */}
         </div>
       </div>
       <div className={style.formularioContainer}>

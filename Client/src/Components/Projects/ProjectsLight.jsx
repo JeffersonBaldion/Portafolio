@@ -10,7 +10,7 @@ export default function ProjectsLight() {
   return (
     <div>
       {/* Seccion de proyectos */}
-      <div className={style.projectsContainer}>
+      <div className={style.projectsContainer} id="projects">
         <h2>Proyectos</h2>
         <div className={style.eachProjectContainer}>
           <div className={style.eachProject}>

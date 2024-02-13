@@ -104,9 +104,9 @@ export default function ContactMe() {
               </div>
             </div>
             <div className={style.redes}>
-              <img src={mailImage} alt="LinkedIn" />
+              {/* <img src={mailImage} alt="LinkedIn" />
               <img src={gitImage} alt="Github" />
-              <img src={LinkedInImage} alt="Correo" />
+              <img src={LinkedInImage} alt="Correo" /> */}
             </div>
           </div>
           <div className={style.formContainer}>
